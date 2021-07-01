@@ -1,0 +1,18 @@
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.site-nav {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.site-nav__item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 15px;
+  margin-top: 15px;
+}
