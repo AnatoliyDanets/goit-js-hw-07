@@ -17,7 +17,7 @@ const ingredients = [
 // console.log(ulEl);
 
 
-// Вариант -2 с функцией
+// Вариант -2 
 const ulEl = document.querySelector('#ingredients');
 const createList = item => {
   const ulNewLi = document.createElement('li');
