@@ -33,8 +33,8 @@ const images = [
 // Вариант -2
 const ulNewLi = document.querySelector('#gallery');
 ulNewLi.classList.add('site-nav');
-images.map((image) => {
- ulNewLi.insertAdjacentHTML('beforeend', `<li class= site-nav__item><img src=${image.url} alt='${image.alt}' width = 450></li>`)
-});
-
- console.log(ulNewLi);
+const addImgList=images.reduce((acc,image) => {
+return acc +`<li class= site-nav__item><img src=${image.url} alt='${image.alt}' width = 450></li>`
+},'');
+ulNewLi.insertAdjacentHTML('beforeend', addImgList);
+console.log(ulNewLi);
